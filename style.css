@@ -1481,3 +1481,584 @@ tfoot td {
 }
 
     
+
+/* ===== DESKTOP ===== */
+
+@media (min-width: 1025px) {
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    .barra-pesquisa {
+        flex-shrink: 1;
+        min-width: 180px;
+    }
+
+    .apresentacao {
+        flex-direction: row;
+    }
+
+    .produtos,
+    .grade-produtos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .filtros-loja {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+
+    .cabecalho-conteudo {
+        flex-wrap: nowrap;
+    }
+
+    .introducao {
+        flex-direction: row;
+    }
+
+    .form-busca {
+        flex-wrap: nowrap;
+    }
+}
+
+/* ===== TABLET: 768px ATÉ 1024px ===== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav,
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .barra-pesquisa {
+        width: min(100%, 400px);
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 35px 5%;
+    }
+
+    .texto-apresentacao,
+    .imagens-apresentacao {
+        width: 100%;
+    }
+
+    .imagens-apresentacao img {
+        min-width: 0;
+        height: 260px;
+    }
+
+    .produtos,
+    .grade-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filtros-loja {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .redes-sociais {
+        width: 45%;
+    }
+
+    .formulario-contato {
+        width: 50%;
+    }
+
+    .cabecalho-conteudo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .introducao {
+        flex-wrap: wrap;
+    }
+
+    .emissao {
+        min-width: 0;
+    }
+
+    .form-busca {
+        flex-wrap: wrap;
+    }
+
+    .campo-busca {
+        min-width: 200px;
+    }
+
+    .campo-criterio {
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .secao-relatorio {
+        padding: 18px;
+    }
+
+    .rodape-admin {
+        flex-wrap: wrap;
+    }
+}
+
+/* ===== SMARTPHONE: ATÉ 320px ===== */
+
+@media (max-width: 320px) {
+
+    /* Evita que elementos ultrapassem a largura da tela */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    *,
+    *::before,
+    *::after {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    #logo {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .barra-pesquisa input {
+        width: 100%;
+        padding: 9px 6px;
+        font-size: 13px;
+    }
+
+    .barra-pesquisa button {
+        padding: 9px 8px;
+        font-size: 12px;
+    }
+
+    /* Menu compacto.
+       O hambúrguer interativo exige um controle no HTML. */
+
+    nav,
+    .links {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 8px;
+        text-align: center;
+        border-bottom: 1px solid #DCE4E7;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        gap: 18px;
+        padding: 22px 12px;
+    }
+
+    .texto-apresentacao,
+    .imagens-apresentacao {
+        width: 100%;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 1.4rem;
+    }
+
+    #descricao {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .imagens-apresentacao {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imagens-apresentacao img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre h2 {
+        font-size: 23px;
+    }
+
+    .produtos,
+    .grade-produtos {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        padding: 10px;
+    }
+
+    .tabela img {
+        height: 160px;
+    }
+
+    .produto > img {
+        height: 160px;
+    }
+
+    .conteudo-produto {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .conteudo-produto h2 {
+        font-size: 17px;
+    }
+
+    .adicionar-carrinho,
+    #finalizar-compra {
+        width: 100%;
+        padding: 11px 8px;
+        font-size: 13px;
+    }
+
+    .pagina-loja,
+    .pagina-perfil,
+    .conteudo-admin {
+        width: 100%;
+        padding: 18px 10px 25px;
+    }
+
+    .introducao-loja h1 {
+        font-size: 24px;
+    }
+
+    .filtros-loja {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .filtro-campo input,
+    .filtro-campo select {
+        font-size: 13px;
+        padding: 10px 6px;
+    }
+
+    .secao-carrinho {
+        margin-top: 30px;
+    }
+
+    .secao-carrinho > h2,
+    .confirmacao-compra h2 {
+        font-size: 22px;
+    }
+
+    .tabela-carrinho-responsiva,
+    .tabela-responsiva,
+    .tabela-container {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela-carrinho {
+        min-width: 580px;
+    }
+
+    .resumo-carrinho {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .total-carrinho {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    #mensagem-carrinho {
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 12px;
+    }
+
+    .redes-sociais,
+    .formulario-contato {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .redes-sociais h2 {
+        font-size: 21px;
+    }
+
+    .pagina-cadastro,
+    .pagina-login {
+        min-height: 0;
+        padding: 20px 10px;
+    }
+
+    .formulario-cadastro,
+    .formulario-login,
+    .formulario-perfil {
+        width: 100%;
+        padding: 16px 12px;
+    }
+
+    .formulario-cadastro h1,
+    .formulario-login h1 {
+        font-size: 23px;
+    }
+
+    .campo input,
+    .campo-login input,
+    .campo-perfil input {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .botoes-perfil {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botoes-perfil button,
+    .botao-voltar {
+        width: 100%;
+    }
+
+    .cabecalho-conteudo {
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 10px;
+    }
+
+    .marca {
+        font-size: 18px;
+    }
+
+    .identificacao-admin h1 {
+        font-size: 20px;
+    }
+
+    .introducao {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .introducao h2 {
+        font-size: 23px;
+    }
+
+    .emissao {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .secao-relatorio {
+        padding: 12px;
+        margin-bottom: 18px;
+    }
+
+    .titulo-secao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 17px;
+    }
+
+    .form-busca {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .campo-busca,
+    .campo-criterio {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .botao-busca {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 9px 7px;
+    }
+
+    .rodape-admin {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px 12px;
+    }
+
+    .rodape-admin .rodape-direitos {
+        text-align: left;
+    }
+}
+
+
+
+/* Oculta o checkbox sem impedir sua utilização */
+.menu-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* O ícone fica oculto em telas maiores */
+.menu-hamburguer {
+    display: none;
+}
+
+/* Menu hambúrguer para smartphones de até 320px */
+@media (max-width: 320px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #logo {
+        width: 90px;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Ícone de três linhas */
+    .menu-hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 38px;
+        height: 38px;
+        padding: 7px;
+        box-sizing: border-box;
+        border: 2px solid #087F91;
+        border-radius: 6px;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .menu-hamburguer span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        flex-shrink: 0;
+        background-color: #087F91;
+        border-radius: 2px;
+    }
+
+    /* O checkbox fica associado ao ícone */
+    .menu-toggle {
+        order: 2;
+    }
+
+    .menu-toggle:focus-visible + .menu-hamburguer {
+        outline: 2px solid #D98212;
+        outline-offset: 3px;
+    }
+
+    /* Barra de pesquisa abaixo do logotipo */
+    .barra-pesquisa {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Menu fechado inicialmente */
+    header nav.links {
+        display: none;
+        order: 4;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+    }
+
+    header nav.links a {
+        display: block;
+        width: 100%;
+        padding: 12px 8px;
+        text-align: center;
+        border-bottom: 1px solid #DCE4E7;
+        box-sizing: border-box;
+    }
+
+    /* Abre o menu quando o checkbox é marcado */
+    header .menu-toggle:checked ~ nav.links {
+        display: flex;
+    }
+}
