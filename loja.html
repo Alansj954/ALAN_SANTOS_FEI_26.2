@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Passeios - Guia Bre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="imagens/logo.png" alt="Logo Guia Bre" id="logo">
+        </a>
+
+        <div class="barra-pesquisa">
+            <input type="search" placeholder="Pesquisar">
+            <button type="button">Buscar</button>
+        </div>
+
+        <nav class="links">
+            <a href="index.html"><b>Início</b></a>
+            <a href="loja.html"><b>Loja</b></a>
+            <a href="cadastro.html"><b>Cadastre-se</b></a>
+            <a href="login.html"><b>Entrar</b></a>
+            <a href="perfil.html"><b>Perfil</b></a>
+        </nav>
+    </header>
+
+    <main class="pagina-loja">
+
+        <section class="introducao-loja">
+            <h1>Nossos passeios</h1>
+            <div>
+                Explore a Grande Florianópolis e encontre
+                o passeio ideal para sua próxima experiência!
+            </div>
+        </section>
+
+        <!-- BUSCA E FILTROS -->
+        <section class="filtros-loja">
+
+            <div class="filtro-campo">
+                <label for="busca-produto">Buscar passeio</label>
+                <input
+                    type="search"
+                    id="busca-produto"
+                    placeholder="Digite o nome do passeio">
+            </div>
+
+            <div class="filtro-campo">
+                <label for="categoria">Categoria</label>
+                <select id="categoria">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="praias">Praias</option>
+                    <option value="cultura">Cultura e história</option>
+                    <option value="natureza">Natureza</option>
+                </select>
+            </div>
+
+            <div class="filtro-campo">
+                <label for="preco-maximo">Preço máximo</label>
+                <select id="preco-maximo">
+                    <option value="todos">Todos os preços</option>
+                    <option value="100">Até R$ 100,00</option>
+                    <option value="120">Até R$ 120,00</option>
+                    <option value="150">Até R$ 150,00</option>
+                    <option value="200">Até R$ 200,00</option>
+                </select>
+            </div>
+
+            <div class="filtro-campo">
+                <label for="ordenacao">Ordenar por</label>
+                <select id="ordenacao">
+                    <option value="padrao">Padrão</option>
+                    <option value="menor">Menor preço</option>
+                    <option value="maior">Maior preço</option>
+                    <option value="nome">Nome A-Z</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- GRADE DE PRODUTOS -->
+        <section class="grade-produtos" id="grade-produtos">
+
+            <article class="produto" data-nome="Praias de Florianópolis"
+                data-categoria="praias" data-preco="120">
+                <img src="imagens/1.jpeg" alt="Praias de Florianópolis">
+                <div class="conteudo-produto">
+                    <h2>Praias de Florianópolis</h2>
+                    <div>Conheça as belas praias da ilha.</div>
+                    <div class="preco-loja">R$ 120,00</div>
+                    <button type="button" class="adicionar-carrinho"
+                        data-id="p1">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto" data-nome="Centro histórico"
+                data-categoria="cultura" data-preco="100">
+                <img src="imagens/guia bre.jpeg" alt="Passeio pelo centro histórico">
+                <div class="conteudo-produto">
+                    <h2>Centro histórico</h2>
+                    <div>Descubra a história e a cultura local.</div>
+                    <div class="preco-loja">R$ 100,00</div>
+                    <button type="button" class="adicionar-carrinho"
+                        data-id="p2">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto" data-nome="Trilhas e natureza"
+                data-categoria="natureza" data-preco="150">
+                <img src="imagens/1.jpeg" alt="Passeio em meio à natureza">
+                <div class="conteudo-produto">
+                    <h2>Trilhas e natureza</h2>
+                    <div>Explore paisagens naturais da região.</div>
+                    <div class="preco-loja">R$ 150,00</div>
+                    <button type="button" class="adicionar-carrinho"
+                        data-id="p3">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto" data-nome="Passeio panorâmico"
+                data-categoria="natureza" data-preco="180">
+                <img src="imagens/guia bre.jpeg" alt="Vista panorâmica da região">
+                <div class="conteudo-produto">
+                    <h2>Passeio panorâmico</h2>
+                    <div>Admire as paisagens da Grande Florianópolis.</div>
+                    <div class="preco-loja">R$ 180,00</div>
+                    <button type="button" class="adicionar-carrinho"
+                        data-id="p4">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto" data-nome="Cultura açoriana"
+                data-categoria="cultura" data-preco="120">
+                <img src="imagens/1.jpeg" alt="Experiência cultural">
+                <div class="conteudo-produto">
+                    <h2>Cultura açoriana</h2>
+                    <div>Conheça as tradições da região.</div>
+                    <div class="preco-loja">R$ 120,00</div>
+                    <button type="button" class="adicionar-carrinho"
+                        data-id="p5">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto" data-nome="Roteiro de praias e mirantes"
+                data-categoria="praias" data-preco="200">
+                <img src="imagens/guia bre.jpeg" alt="Praias e mirantes">
+                <div class="conteudo-produto">
+                    <h2>Praias e mirantes</h2>
+                    <div>Um roteiro por vistas inesquecíveis.</div>
+                    <div class="preco-loja">R$ 200,00</div>
+                    <button type="button" class="adicionar-carrinho"
+                        data-id="p6">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+        </section>
+
+        <div id="nenhum-produto" hidden>
+            Nenhum passeio encontrado com esses filtros.
+        </div>
+
+        <!-- CARRINHO -->
+        <section class="secao-carrinho" id="carrinho">
+
+            <h2>Meu carrinho</h2>
+
+            <div class="tabela-carrinho-responsiva">
+                <table class="tabela-carrinho">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço unitário</th>
+                            <th>Subtotal</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="itens-carrinho">
+                        <!-- Preenchido pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="resumo-carrinho">
+                <div class="total-carrinho">
+                    Total: <span id="total-carrinho">R$ 0,00</span>
+                </div>
+
+                <button type="button" id="finalizar-compra">
+                    Finalizar compra
+                </button>
+            </div>
+
+            <div id="mensagem-carrinho" role="status" aria-live="polite"></div>
+
+        </section>
+
+        <!-- CONFIRMAÇÃO: OCULTA INICIALMENTE -->
+        <section class="confirmacao-compra" id="confirmacao-compra" hidden>
+            <h2>Compra finalizada com sucesso!</h2>
+            <div>Obrigado por escolher a Guia Bre.</div>
+            <div>Seu número de pedido é:</div>
+            <strong>CP001</strong>
+            <div>Esta é uma confirmação demonstrativa.</div>
+        </section>
+
+    </main>
+
+    <script src="loja.js"></script>
+
+    <footer>
+            <div class="redes-sociais">
+                <h2>Redes sociais</h2>
+
+                <a href="https://www.instagram.com/guia.bre/" target="_blank">
+                <img src="imagens/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=5548996383214&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="imagens/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+
+            <div class="formulario-contato">
+                <h2>Entre em contato</h2>
+
+                <form action="#" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email"
+                   placeholder="Seu e-mail" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem"
+                      placeholder="Escreva sua mensagem"
+                      rows="4" required></textarea>
+
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+
+        </footer>
+
+</body>
+</html>
