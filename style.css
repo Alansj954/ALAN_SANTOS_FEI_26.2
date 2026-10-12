@@ -1,3 +1,5 @@
+/*Index*/
+
 header {display: flex;
      gap: 30px;
      justify-content:space-between;
@@ -13,11 +15,11 @@ header {display: flex;
 nav {
     display: flex;
     gap: 60px;   
-    color: #087F91; 
+    color: var(--azul-petroleo); 
 }
 
 nav a{
-    color: #087F91;
+    color: var(--azul-petroleo);
 }
 
 .links{
@@ -28,7 +30,7 @@ nav a{
     display: flex;
     align-items: center;
     width: 400px;
-    border: 2px solid #087F91;
+    border: 2px solid var(--azul-petroleo);
     border-radius: 30px;
     overflow: hidden;
 }
@@ -45,16 +47,16 @@ nav a{
 .barra-pesquisa button {
     padding: 12px 20px;
     border: none;
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
     color: white;
     cursor: pointer;
 }
 
-h1 {color: #D98212;
+h1 {color: var(--laranja);
     text-align: center;
     margin-top: 50px;
 }
-p{color: #087F91;
+p{color: var(--azul-petroleo);
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
@@ -73,7 +75,7 @@ body{
     gap: 35px;
 
     padding: 50px 7%;
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
     color: white;
 }
 
@@ -156,7 +158,7 @@ body{
 .preco {
     font-size: 20px;
     font-weight: bold;
-    color: #D98212;
+    color: var(--laranja);
     margin: 10px 0;
 }
 
@@ -166,7 +168,7 @@ footer {
     align-items: flex-start;
     gap: 40px;
     padding: 30px 7%;
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
 }
 
 .redes-sociais,
@@ -198,6 +200,8 @@ footer {
     object-fit: contain;
 }
 
+/*Cadastro*/
+
 .formulario-contato {
     background-color: white;
     width: 20%;
@@ -207,7 +211,7 @@ footer {
 }
 
 .formulario-contato h2 {
-    color: #087F91;
+    color: var(--azul-petroleo);
     text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
@@ -241,7 +245,7 @@ footer {
 
 .formulario-contato button {
     padding: 12px;
-    background-color: #D98212;
+    background-color: var(--laranja);
     color: white;
     border: none;
     border-radius: 6px;
@@ -250,7 +254,7 @@ footer {
 }
 
 .formulario-contato button:hover {
-    background-color: #b86d0d;
+    background-color: var(--laranja);
 }
 
 .pagina-cadastro {
@@ -274,14 +278,14 @@ footer {
 }
 
 .formulario-cadastro h1 {
-    color: #D98212;
+    color: var(--laranja);
     text-align: center;
     font-size: 28px;
     margin: 0 0 15px;
 }
 
 .descricao-cadastro {
-    color: #087F91;
+    color: var(--azul-petroleo);
     text-align: center;
     line-height: 1.5;
     margin-bottom: 25px;
@@ -300,7 +304,7 @@ footer {
 }
 
 .campo label {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-weight: bold;
     font-size: 15px;
 }
@@ -313,11 +317,11 @@ footer {
     font-family: inherit;
     font-size: 15px;
     box-sizing: border-box;
-    outline-color: #087F91;
+    outline-color: var(--azul-petroleo);
 }
 
 .campo input:focus {
-    border-color: #087F91;
+    border-color: var(--azul-petroleo);
 }
 
 .campo input::placeholder {
@@ -327,7 +331,7 @@ footer {
 .formulario-cadastro button {
     padding: 13px;
     margin-top: 5px;
-    background-color: #D98212;
+    background-color: var(--laranja);
     color: white;
     border: none;
     border-radius: 6px;
@@ -337,7 +341,7 @@ footer {
 }
 
 .formulario-cadastro button:hover {
-    background-color: #b86d0d;
+    background-color: var(--laranja);
 }
 
 .voltar-inicio {
@@ -348,7 +352,7 @@ footer {
 }
 
 .voltar-inicio a {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-weight: bold;
     text-decoration: none;
 }
@@ -356,6 +360,8 @@ footer {
 .voltar-inicio a:hover {
     text-decoration: underline;
 }
+
+/*Login*/
 
 .pagina-login {
     min-height: 80vh;
@@ -378,14 +384,14 @@ footer {
 }
 
 .formulario-login h1 {
-    color: #D98212;
+    color: var(--laranja);
     text-align: center;
     font-size: 28px;
     margin: 0 0 15px;
 }
 
 .descricao-login {
-    color: #087F91;
+    color: var(--azul-petroleo);
     text-align: center;
     line-height: 1.5;
     margin-bottom: 25px;
@@ -404,7 +410,7 @@ footer {
 }
 
 .campo-login label {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-weight: bold;
     font-size: 15px;
 }
@@ -417,11 +423,11 @@ footer {
     font-family: inherit;
     font-size: 15px;
     box-sizing: border-box;
-    outline-color: #087F91;
+    outline-color: var(--azul-petroleo);
 }
 
 .campo-login input:focus {
-    border-color: #087F91;
+    border-color: var(--azul-petroleo);
 }
 
 .campo-login input::placeholder {
@@ -431,7 +437,7 @@ footer {
 .formulario-login button {
     padding: 13px;
     margin-top: 5px;
-    background-color: #D98212;
+    background-color: var(--laranja);
     color: white;
     border: none;
     border-radius: 6px;
@@ -444,6 +450,8 @@ footer {
     background-color: #b86d0d;
 }
 
+/*Login*/
+
 .link-cadastro {
     margin-top: 22px;
     text-align: center;
@@ -452,7 +460,7 @@ footer {
 }
 
 .link-cadastro a {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-weight: bold;
     text-decoration: none;
 }
@@ -461,6 +469,8 @@ footer {
     text-decoration: underline;
 }
 
+/*perfil*/
+
 .pagina-perfil {
     max-width: 1000px;
     margin: 0 auto;
@@ -468,7 +478,7 @@ footer {
 }
 
 .pagina-perfil > h1 {
-    color: #D98212;
+    color: var(--laranja);
     text-align: center;
     font-size: 32px;
     margin: 10px 0 30px;
@@ -486,7 +496,7 @@ footer {
 
 .formulario-perfil h2,
 .secao-pedidos h2 {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-size: 24px;
     text-align: center;
     margin: 0 0 25px;
@@ -505,7 +515,7 @@ footer {
 }
 
 .campo-perfil label {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-weight: bold;
     font-size: 15px;
 }
@@ -521,7 +531,7 @@ footer {
 }
 
 .campo-perfil input:focus {
-    outline: 2px solid #087F91;
+    outline: 2px solid var(--azul-petroleo);
     outline-offset: 1px;
 }
 
@@ -553,25 +563,25 @@ footer {
 }
 
 .botoes-perfil button {
-    background-color: #D98212;
+    background-color: var(--laranja);
     color: white;
 }
 
 .botoes-perfil button:hover {
-    background-color: #b86d0d;
+    background-color: var(--laranja);
 }
 
 .botao-voltar {
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
     color: white;
 }
 
 .botao-voltar:hover {
-    background-color: #066574;
+    background-color: var(--azul-petroleo);
 }
 
 
-/* ===== TABELA MEUS PEDIDOS ===== */
+/* Tabela de meus pedidos */
 
 .secao-pedidos {
     margin-top: 40px;
@@ -590,7 +600,7 @@ footer {
 }
 
 .tabela-pedidos th {
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
     color: white;
     text-align: left;
     padding: 14px 12px;
@@ -625,7 +635,7 @@ footer {
     color: #995c00;
 }
 
-/* ===== LOJA DE PASSEIOS ===== */
+/*  LOJA */
 
 .pagina-loja {
     max-width: 1200px;
@@ -640,13 +650,13 @@ footer {
 }
 
 .introducao-loja h1 {
-    color: #D98212;
+    color: var(--laranja);
     font-size: 32px;
     margin: 10px 0 15px;
 }
 
 .introducao-loja div {
-    color: #087F91;
+    color: var(--azul-petroleo);
     line-height: 1.6;
 }
 
@@ -668,7 +678,7 @@ footer {
 }
 
 .filtro-campo label {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-weight: bold;
     font-size: 14px;
 }
@@ -689,7 +699,7 @@ footer {
 .filtro-campo input:focus,
 .filtro-campo select:focus {
     outline: 2px solid rgba(8, 127, 145, 0.25);
-    border-color: #087F91;
+    border-color: var(--azul-petroleo);
 }
 
 
@@ -728,7 +738,7 @@ footer {
 }
 
 .conteudo-produto h2 {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-size: 19px;
     margin: 0;
 }
@@ -739,7 +749,7 @@ footer {
 }
 
 .preco-loja {
-    color: #D98212;
+    color: var(--laranja);
     font-size: 21px;
     font-weight: bold;
 }
@@ -749,7 +759,7 @@ footer {
     padding: 12px 15px;
     border: none;
     border-radius: 6px;
-    background-color: #D98212;
+    background-color: var(--laranja);
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -776,7 +786,7 @@ footer {
 
 .secao-carrinho > h2,
 .confirmacao-compra h2 {
-    color: #087F91;
+    color: var(--azul-petroleo);
     text-align: center;
     font-size: 28px;
     margin-bottom: 25px;
@@ -797,7 +807,7 @@ footer {
 
 .tabela-carrinho th {
     padding: 14px 12px;
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
     color: white;
     text-align: left;
 }
@@ -838,7 +848,7 @@ footer {
 }
 
 .total-carrinho {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-size: 23px;
     font-weight: bold;
 }
@@ -871,15 +881,13 @@ footer {
 .confirmacao-compra strong {
     display: block;
     margin: 15px 0;
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-size: 30px;
 }
 
 
 
-/* ==============================
-   ESTILOS GERAIS
-============================== */
+/* Gerais*/
 
 * {
     margin: 0;
@@ -909,14 +917,12 @@ a {
     text-decoration: none;
 }
 
-/* ==============================
-   CABEÇALHO ADMINISTRATIVO
-============================== */
+/* Cabeçalho administrativo*/
 
 .cabecalho-admin {
     background-color: #FFFFFF;
-    color: #087F91;
-    border-bottom: 4px solid #D98212;
+    color: var(--azul-petroleo);
+    border-bottom: 4px solid var(--laranja);
 }
 
 .cabecalho-conteudo {
@@ -933,7 +939,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-size: 22px;
     font-weight: bold;
 }
@@ -949,20 +955,20 @@ a {
 }
 
 .identificacao-admin p {
-    color: #D98212;
+    color: var(--laranja);
     font-size: 11px;
     letter-spacing: 2px;
     margin-bottom: 3px;
 }
 
 .identificacao-admin h1 {
-    color: #087F91;
+    color: var(--azul-petroleo);
     font-size: 23px;
 }
 
 .link-voltar {
-    color: #087F91;
-    border: 1px solid #087F91;
+    color: var(--azul-petroleo);
+    border: 1px solid var(--azul-petroleo);
     padding: 9px 14px;
     border-radius: 6px;
     font-size: 13px;
@@ -970,13 +976,11 @@ a {
 }
 
 .link-voltar:hover {
-    background-color: #087F91;
+    background-color: var(--azul-petroleo);
     color: #FFFFFF;
 }
 
-/* ==============================
-   CONTEÚDO PRINCIPAL
-============================== */
+/* Conteúdo princpipal*/
 
 .conteudo-admin {
     max-width: 1200px;
@@ -1043,9 +1047,7 @@ a {
     margin-top: 4px;
 }
 
-/* ==============================
-   SEÇÕES DOS RELATÓRIOS
-============================== */
+/* Seções dos relatorios */
 
 .secao-relatorio {
     background-color: var(--branco);
@@ -1094,9 +1096,7 @@ a {
     font-size: 13px;
 }
 
-/* ==============================
-   FORMULÁRIOS DE BUSCA
-============================== */
+/* Formularios de busca */
 
 .form-busca {
     display: flex;
@@ -1167,9 +1167,7 @@ a {
     background-color: #B96C0B;
 }
 
-/* ==============================
-   TABELAS
-============================== */
+/* Tabelas */
 
 .tabela-container {
     width: 100%;
@@ -1229,9 +1227,7 @@ tfoot td {
     border-bottom: none;
 }
 
-/* ==============================
-   AVISO E RODAPÉ
-============================== */
+/* Aviso e rodapé */
 
 .aviso-dados {
     padding: 14px 17px;
@@ -1476,7 +1472,7 @@ tfoot td {
 
     
 
-/* ===== DESKTOP ===== */
+/* Desktop */
 
 @media (min-width: 1025px) {
 
@@ -1515,7 +1511,7 @@ tfoot td {
     }
 }
 
-/* ===== TABLET: 768px ATÉ 1024px ===== */
+/* Tablet: 768px até 1024px  */
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -1606,7 +1602,7 @@ tfoot td {
     }
 }
 
-/* ===== SMARTPHONE: ATÉ 320px ===== */
+/*  Smartphone: até 320px  */
 
 @media (max-width: 320px) {
 
@@ -1660,9 +1656,6 @@ tfoot td {
         padding: 9px 8px;
         font-size: 12px;
     }
-
-    /* Menu compacto.
-       O hambúrguer interativo exige um controle no HTML. */
 
     nav,
     .links {
@@ -1955,8 +1948,7 @@ tfoot td {
 }
 
 
-
-/* Oculta o checkbox sem impedir sua utilização */
+/* Ocultar o checkbox sem impedir sua utilização */
 .menu-toggle {
     position: absolute;
     width: 1px;
@@ -1999,7 +1991,7 @@ tfoot td {
         height: 38px;
         padding: 7px;
         box-sizing: border-box;
-        border: 2px solid #087F91;
+        border: 2px solid var(--azul-petroleo);
         border-radius: 6px;
         cursor: pointer;
         order: 2;
@@ -2010,21 +2002,20 @@ tfoot td {
         width: 100%;
         height: 3px;
         flex-shrink: 0;
-        background-color: #087F91;
+        background-color: var(--azul-petroleo);
         border-radius: 2px;
     }
 
-    /* O checkbox fica associado ao ícone */
+    /* checkbox fica associado ao ícone */
     .menu-toggle {
         order: 2;
     }
 
     .menu-toggle:focus-visible + .menu-hamburguer {
-        outline: 2px solid #D98212;
+        outline: 2px solid var(--laranja);
         outline-offset: 3px;
     }
 
-    /* Barra de pesquisa abaixo do logotipo */
     .barra-pesquisa {
         order: 3;
         width: 100%;
@@ -2057,7 +2048,7 @@ tfoot td {
     }
 }
 
-/* ===== MENU HAMBÚRGUER ATÉ 768px ===== */
+/*  Menu hamburguer até 768px  */
 
 @media (max-width: 768px) {
 
@@ -2072,7 +2063,7 @@ tfoot td {
         height: 38px;
         padding: 7px;
         box-sizing: border-box;
-        border: 2px solid #087F91;
+        border: 2px solid var(--azul-petroleo);
         border-radius: 6px;
         cursor: pointer;
     }
@@ -2082,13 +2073,13 @@ tfoot td {
         width: 100%;
         height: 3px;
         flex-shrink: 0;
-        background-color: #087F91;
+        background-color: var(--azul-petroleo);
         border-radius: 2px;
     }
 
     /* Mantém o checkbox acessível por teclado */
     .menu-toggle:focus-visible + .menu-hamburguer {
-        outline: 2px solid #D98212;
+        outline: 2px solid var(--laranja);
         outline-offset: 3px;
     }
 
