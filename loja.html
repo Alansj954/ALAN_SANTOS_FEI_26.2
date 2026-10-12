@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Passeios - Guia Bre</title>
+    <title>Loja de turismo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,6 +20,14 @@
             <input type="search" placeholder="Pesquisar">
             <button type="button">Buscar</button>
         </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
         <nav class="links">
             <a href="index.html"><b>Início</b></a>
@@ -40,12 +48,13 @@
             </div>
         </section>
 
-        
+
         <section class="filtros-loja">
+            <h2>Filtrar passeios</h2>
 
             <div class="filtro-campo">
                 <label for="busca-produto">Buscar passeio</label>
-                <input type="search"id="busca-produto" placeholder="Digite o nome do passeio">
+                <input type="search" id="busca-produto" placeholder="Digite o nome do passeio">
             </div>
 
             <div class="filtro-campo">
@@ -83,10 +92,11 @@
 
         
         <section class="grade-produtos" id="grade-produtos">
+            <h2>Passeios disponíveis</h2>
 
             <article class="produto" data-nome="Praias de Florianópolis"
                 data-categoria="praias" data-preco="120">
-                <img src="imagens/sul da ilha.jpeg" alt="Praias de Florianópolis">
+                <img src="imagens/sul_da_ilha.jpeg" alt="Praias de Florianópolis">
                 <div class="conteudo-produto">
                     <h2>Praias de Florianópolis</h2>
                     <div>Conheça as belas praias da ilha.</div>
@@ -98,7 +108,7 @@
 
             <article class="produto" data-nome="Centro histórico"
                 data-categoria="cultura" data-preco="100">
-                <img src="imagens/centro historico.jpeg" alt="centro histórico de florianopolis">
+                <img src="imagens/centro_historico.jpeg" alt="centro histórico de florianopolis">
                 <div class="conteudo-produto">
                     <h2>Centro histórico</h2>
                     <div>Descubra a história e a cultura local.</div>
@@ -122,7 +132,7 @@
 
             <article class="produto" data-nome="Passeio panorâmico"
                 data-categoria="natureza" data-preco="180">
-                <img src="imagens/lagoa e costa.jpeg" alt="Lagoa da conceiçao">
+                <img src="imagens/lagoa_e_costa.jpeg" alt="Lagoa da conceiçao">
                 <div class="conteudo-produto">
                     <h2>Passeio panorâmico</h2>
                     <div>Admire as paisagens da Grande Florianópolis.</div>
@@ -134,7 +144,7 @@
 
             <article class="produto" data-nome="Cultura açoriana"
                 data-categoria="cultura" data-preco="120">
-                <img src="imagens/st antonio.jpeg" alt="Santo antonio de Lisboa">
+                <img src="imagens/st_antonio.jpeg" alt="Santo antonio de Lisboa">
                 <div class="conteudo-produto">
                     <h2>Cultura açoriana</h2>
                     <div>Conheça as tradições da região.</div>
@@ -146,7 +156,7 @@
 
             <article class="produto" data-nome="Roteiro de praias e mirantes"
                 data-categoria="praias" data-preco="200">
-                <img src="imagens/praia do forte.jpeg" alt="Praia do forte">
+                <img src="imagens/praia_do_forte.jpeg" alt="Praia do forte">
                 <div class="conteudo-produto">
                     <h2>Praias e mirantes</h2>
                     <div>Um roteiro por vistas inesquecíveis.</div>

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil - Guia Bre</title>
+    <title>Meu Perfil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,6 +20,15 @@
             <input type="search" placeholder="Pesquisar">
             <button type="button">Buscar</button>
         </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
 
         <nav class="links">
             <a href="index.html"><b>Início</b></a>
@@ -187,11 +196,11 @@
                 <h2>Entre em contato</h2>
 
                 <form action="#" method="post">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    <label for="nome-contato">Nome</label>
+                    <input type="text" id="nome-contato" name="nome" placeholder="Seu nome" required>
 
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email"
+                    <label for="email-contato">E-mail</label>
+                    <input type="email" id="email-contato" name="email"
                    placeholder="Seu e-mail" required>
 
                     <label for="mensagem">Mensagem</label>
