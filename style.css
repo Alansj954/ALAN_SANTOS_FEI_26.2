@@ -851,75 +851,322 @@ a {
 }
 
 
-/* Relatórios */
+/* CABEÇALHO ADMINISTRATIVO */
 
-.conteudo-admin {
-    max-width: 1100px;
+.cabecalho-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 5%;
+    background-color: var(--azul-petroleo);
+    color: white;
+}
+
+.marca-admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.marca-admin img {
+    width: 65px;
+    height: auto;
+}
+
+.identificacao-admin {
+    text-align: center;
+}
+
+.identificacao-admin p {
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
+
+.identificacao-admin h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+
+.link-voltar-admin {
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+}
+
+.link-voltar-admin:hover {
+    background-color: var(--azul-escuro);
+}
+
+/* CONTEÚDO */
+
+.conteudo-relatorios {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-.conteudo-admin > h1 {
-    color: var(--laranja);
+.introducao-relatorios {
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.introducao-relatorios h2 {
+    color: var(--laranja);
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
+.introducao-relatorios p {
+    color: var(--azul-petroleo);
+    margin: 10px 0;
+}
+
+.data-emissao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    color: var(--azul-petroleo);
+}
+
+/* SEÇÕES */
+
 .secao-relatorio {
-    margin: 30px 0;
-    padding: 20px;
+    margin-bottom: 30px;
+    padding: 25px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
 .secao-relatorio h2 {
+    margin-bottom: 5px;
     color: var(--azul-petroleo);
-    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-.tabela-container {
+.secao-relatorio > p {
+    margin: 10px 0 20px;
+    color: var(--texto-secundario);
+}
+
+/* BUSCA */
+
+.form-busca {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.campo-busca,
+.campo-criterio {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+    min-width: 0;
+}
+
+.form-busca label {
+    color: var(--azul-petroleo);
+    font-weight: bold;
+}
+
+.form-busca input,
+.form-busca select {
+    width: 100%;
+    min-width: 0;
+    padding: 11px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    background-color: white;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.form-busca input:focus,
+.form-busca select:focus {
+    outline: 2px solid var(--azul-petroleo);
+}
+
+.form-busca button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--laranja);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-busca button:hover {
+    background-color: #B86D0D;
+}
+
+/* TABELAS */
+
+.tabela-relatorios {
     width: 100%;
     overflow-x: auto;
 }
 
-.tabela-container table {
+.tabela-relatorios table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
 }
 
-.tabela-container th {
+.tabela-relatorios th {
+    padding: 13px 10px;
     background-color: var(--azul-petroleo);
     color: white;
     text-align: left;
-    padding: 12px;
 }
 
-.tabela-container td {
-    padding: 12px;
+.tabela-relatorios td {
+    padding: 13px 10px;
     border-bottom: 1px solid var(--borda);
+    color: var(--texto);
 }
 
-.tabela-container tbody tr:hover {
+.tabela-relatorios tbody tr:hover {
     background-color: var(--fundo);
 }
 
-@media (max-width: 480px) {
-    .conteudo-admin {
-        padding: 20px 10px;
+.tabela-relatorios tfoot td {
+    background-color: #eef5f6;
+    color: var(--azul-petroleo);
+    font-weight: bold;
+}
+
+/* AVISO */
+
+.aviso-relatorios {
+    margin: 25px 0;
+    color: var(--texto-secundario);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* RODAPÉ */
+
+.rodape-relatorios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 5%;
+    background-color: var(--azul-petroleo);
+    color: white;
+}
+
+.rodape-relatorios p {
+    margin: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+/* IMPRESSÃO */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+        font-size: 11px;
+    }
+
+    .cabecalho-admin,
+    .rodape-relatorios {
+        padding: 10px 0;
+        background: white;
+        color: black;
+        border-bottom: 1px solid black;
+    }
+
+    .cabecalho-admin {
+        justify-content: center;
+    }
+
+    .marca-admin,
+    .identificacao-admin,
+    .identificacao-admin p,
+    .identificacao-admin h1,
+    .rodape-relatorios p {
+        color: black;
+    }
+
+    .marca-admin img,
+    .link-voltar-admin,
+    .form-busca {
+        display: none;
+    }
+
+    .conteudo-relatorios {
+        max-width: none;
+        padding: 10px 0;
+    }
+
+    .introducao-relatorios h2,
+    .secao-relatorio h2 {
+        color: black;
     }
 
     .secao-relatorio {
-        padding: 12px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #999;
+        border-radius: 0;
+        box-shadow: none;
+        break-inside: avoid;
     }
 
-    .tabela-container table {
-        font-size: 13px;
+    .tabela-relatorios {
+        overflow: visible;
     }
 
-    .tabela-container th,
-    .tabela-container td {
-        padding: 8px;
+    .tabela-relatorios table {
+        width: 100%;
+        font-size: 9px;
+    }
+
+    .tabela-relatorios th,
+    .tabela-relatorios td {
+        padding: 5px;
+        border: 1px solid #999;
+    }
+
+    .tabela-relatorios th {
+        background: #eee !important;
+        color: black !important;
+    }
+
+    .tabela-relatorios tfoot td {
+        background: white;
+        color: black;
+    }
+
+    .aviso-relatorios {
+        color: black;
+    }
+
+    .rodape-relatorios {
+        border-top: 1px solid black;
+        border-bottom: none;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 

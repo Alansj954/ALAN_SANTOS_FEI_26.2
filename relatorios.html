@@ -1,42 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatórios | Guia Bre</title>
+
+    <meta name="description" content="Relatórios administrativos da Guia Bre">
+
+    <title>Relatórios Administrativos | Guia Bre</title>
+
+    <!-- CSS original do site -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- CSS específico dos relatórios -->
+    <link rel="stylesheet" href="relatorios.css">
 </head>
 
 <body>
 
-    <header>
-        <a href="index.html">
-            <img src="imagens/logo.png" alt="Logo Guia Bre" id="logo">
+    <!-- Cabeçalho administrativo -->
+    <header class="cabecalho-admin">
+
+        <a href="index.html" class="marca-admin">
+            <img src="imagens/logo_2.png" alt="Logo Guia Bre">
         </a>
 
-        <h2>Área administrativa</h2>
+        <div class="identificacao-admin">
+            <p>Painel de controle</p>
+            <h1>Área administrativa</h1>
+        </div>
 
-        <nav class="links">
-            <a href="index.html">Voltar ao início</a>
-        </nav>
+        <a href="index.html" class="link-voltar-admin">
+            Voltar ao site
+        </a>
+
     </header>
 
-    <main class="conteudo-admin">
+    <main class="conteudo-relatorios">
 
-        <h1>Relatórios administrativos</h1>
-        <p>Consulte os clientes cadastrados e as compras realizadas.</p>
+        <!-- Introdução -->
+        <section class="introducao-relatorios">
 
+            <h2>Relatórios administrativos</h2>
+
+            <p>
+                Consulte os clientes cadastrados e as compras realizadas.
+            </p>
+
+            <div class="data-emissao">
+                <strong>Data e hora de emissão:</strong>
+                <span>12/10/2026 às 09:00 (exemplo)</span>
+            </div>
+
+        </section>
+
+        <!-- Relatório de clientes -->
         <section class="secao-relatorio" id="clientes">
 
             <h2>Relatório de clientes</h2>
 
-            <div class="tabela-container">
+            <p>Lista de clientes cadastrados na plataforma.</p>
+
+            <form class="form-busca" action="#" method="get">
+
+                <div class="campo-busca">
+                    <label for="busca-cliente">Buscar cliente</label>
+
+                    <input
+                        type="text"
+                        id="busca-cliente"
+                        name="busca_cliente"
+                        placeholder="Digite sua pesquisa"
+                    >
+                </div>
+
+                <div class="campo-criterio">
+                    <label for="criterio-cliente">Pesquisar por</label>
+
+                    <select
+                        id="criterio-cliente"
+                        name="criterio_cliente"
+                    >
+                        <option value="nome">Nome</option>
+                        <option value="id">ID</option>
+                        <option value="email">E-mail</option>
+                        <option value="cpf">CPF</option>
+                    </select>
+                </div>
+
+                <button type="submit">Buscar</button>
+
+            </form>
+
+            <div class="tabela-relatorios">
+
                 <table>
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
                             <th>E-mail</th>
+                            <th>CPF</th>
                         </tr>
                     </thead>
 
@@ -44,39 +108,99 @@
                         <tr>
                             <td>CL001</td>
                             <td>Ana Martins</td>
-                            <td>ana@example.com</td>
+                            <td>ana.martins@example.com</td>
+                            <td>111.222.333-44</td>
                         </tr>
 
                         <tr>
                             <td>CL002</td>
                             <td>Bruno Oliveira</td>
-                            <td>bruno@example.com</td>
+                            <td>bruno.oliveira@example.com</td>
+                            <td>222.333.444-55</td>
                         </tr>
 
                         <tr>
                             <td>CL003</td>
                             <td>Carla Souza</td>
-                            <td>carla@example.com</td>
+                            <td>carla.souza@example.com</td>
+                            <td>333.444.555-66</td>
+                        </tr>
+
+                        <tr>
+                            <td>CL004</td>
+                            <td>Diego Ferreira</td>
+                            <td>diego.ferreira@example.com</td>
+                            <td>444.555.666-77</td>
+                        </tr>
+
+                        <tr>
+                            <td>CL005</td>
+                            <td>Elisa Costa</td>
+                            <td>elisa.costa@example.com</td>
+                            <td>555.666.777-88</td>
                         </tr>
                     </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total de clientes: 5</td>
+                        </tr>
+                    </tfoot>
                 </table>
+
             </div>
 
         </section>
 
-        
+        <!-- Relatório de compras -->
         <section class="secao-relatorio" id="compras">
 
             <h2>Relatório de compras</h2>
 
-            <div class="tabela-container">
-                <table> <!--Dados meramente ilustrativos para demonstração-->
+            <p>Histórico de compras realizadas pelos clientes.</p>
+
+            <form class="form-busca" action="#" method="get">
+
+                <div class="campo-busca">
+                    <label for="busca-compra">Buscar compra</label>
+
+                    <input
+                        type="text"
+                        id="busca-compra"
+                        name="busca_compra"
+                        placeholder="Digite sua pesquisa"
+                    >
+                </div>
+
+                <div class="campo-criterio">
+                    <label for="criterio-compra">Pesquisar por</label>
+
+                    <select
+                        id="criterio-compra"
+                        name="criterio_compra"
+                    >
+                        <option value="id">ID da compra</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="data">Data</option>
+                        <option value="valor">Valor</option>
+                        <option value="produto">Produto</option>
+                    </select>
+                </div>
+
+                <button type="submit">Buscar</button>
+
+            </form>
+
+            <div class="tabela-relatorios">
+
+                <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>ID da compra</th>
                             <th>Cliente</th>
-                            <th>Produto</th>
-                            <th>Valor</th>
+                            <th>Produtos</th>
+                            <th>Quantidade</th>
+                            <th>Valor total</th>
                             <th>Data</th>
                         </tr>
                     </thead>
@@ -86,7 +210,8 @@
                             <td>CP001</td>
                             <td>Ana Martins</td>
                             <td>Passeio de barco</td>
-                            <td>R$ 120,00</td>
+                            <td>2</td>
+                            <td>R$ 240,00</td>
                             <td>02/10/2026</td>
                         </tr>
 
@@ -94,6 +219,7 @@
                             <td>CP002</td>
                             <td>Bruno Oliveira</td>
                             <td>Trilha ecológica</td>
+                            <td>1</td>
                             <td>R$ 90,00</td>
                             <td>03/10/2026</td>
                         </tr>
@@ -102,51 +228,61 @@
                             <td>CP003</td>
                             <td>Carla Souza</td>
                             <td>City tour</td>
-                            <td>R$ 120,00</td>
+                            <td>3</td>
+                            <td>R$ 360,00</td>
                             <td>05/10/2026</td>
                         </tr>
+
+                        <tr>
+                            <td>CP004</td>
+                            <td>Diego Ferreira</td>
+                            <td>Passeio de barco</td>
+                            <td>1</td>
+                            <td>R$ 120,00</td>
+                            <td>08/10/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>CP005</td>
+                            <td>Elisa Costa</td>
+                            <td>Trilha ecológica</td>
+                            <td>2</td>
+                            <td>R$ 180,00</td>
+                            <td>10/10/2026</td>
+                        </tr>
                     </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total das compras</td>
+                            <td>R$ 990,00</td>
+                            <td>5 compras</td>
+                        </tr>
+                    </tfoot>
                 </table>
+
             </div>
 
         </section>
 
+        <p class="aviso-relatorios">
+            Os dados apresentados são fictícios e utilizados
+            exclusivamente para demonstração acadêmica.
+        </p>
+
     </main>
 
-    <footer>
-            <div class="redes-sociais">
-                <h2>Redes sociais</h2>
+    <!-- Rodapé administrativo -->
+    <footer class="rodape-relatorios">
 
-                <a href="https://www.instagram.com/guia.bre/" target="_blank">
-                <img src="imagens/instagram.png" alt="Instagram">
-                </a>
+        <div>
+            <strong>Guia Bre | Administração</strong>
+            <p>Painel de consulta de clientes e compras.</p>
+        </div>
 
-                <a href="https://api.whatsapp.com/send/?phone=5548996383214&text&type=phone_number&app_absent=0" target="_blank">
-                <img src="imagens/whatsapp.png" alt="WhatsApp">
-                </a>
-            </div>
+        <p>&copy; 2026 Guia Bre. Todos os direitos reservados.</p>
 
-            <div class="formulario-contato">
-                <h2>Entre em contato</h2>
-
-                <form action="#" method="post">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email"
-                   placeholder="Seu e-mail" required>
-
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem"
-                      placeholder="Escreva sua mensagem"
-                      rows="4" required></textarea>
-
-                    <button type="submit">Enviar mensagem</button>
-                </form>
-            </div>
-
-        </footer>
+    </footer>
 
 </body>
 </html>
